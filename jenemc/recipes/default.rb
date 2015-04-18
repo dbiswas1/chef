@@ -24,4 +24,15 @@ service "jenkins" do
 	action [:start, :enable]
 end
 
+yum_package "httpd" do
+	action :install
+	flush_cache [:before]
+end
+
+service "httpd" do
+	supports [:stop, :start, :restart]
+	action [:start, :enable]
+end
+
+
 
