@@ -18,14 +18,14 @@
 
 default['tomcat']['base_version'] = 6
 default['tomcat']['base_instance'] = "tomcat#{node['tomcat']['base_version']}"
-default['tomcat']['port'] = 8080
+default['tomcat']['port'] = 8081
 default['tomcat']['proxy_port'] = nil
-default['tomcat']['ssl_port'] = 8443
+default['tomcat']['ssl_port'] = 8444
 default['tomcat']['ssl_proxy_port'] = nil
-default['tomcat']['ajp_port'] = 8009
-default['tomcat']['shutdown_port'] = 8005
+default['tomcat']['ajp_port'] = 8010
+default['tomcat']['shutdown_port'] = 8006
 default['tomcat']['catalina_options'] = ''
-default['tomcat']['java_options'] = '-Xmx128M -Djava.awt.headless=true'
+default['tomcat']['java_options'] = '-Xmx64M -Djava.awt.headless=true'
 default['tomcat']['use_security_manager'] = false
 default['tomcat']['authbind'] = 'no'
 default['tomcat']['deploy_manager_apps'] = true
